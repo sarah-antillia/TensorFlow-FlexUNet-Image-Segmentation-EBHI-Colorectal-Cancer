@@ -146,7 +146,7 @@ EBHI-Colorectal-Cancer-ImageMaskDataset.zip</a>
 <br>
 <b>As shown above, this is a typical imbalanced dataset, because the number of 
 images and masks of <b>Normal</b> and 
-<b> Serrated_adenoma </b> subsets is very small compared with other subsets.</b><br>
+<b> Serrated_adenoma </b> subsets is very small compared to other subsets.</b><br>
 <br>
 We used Python script 
 <a href="./generator/ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a> 
@@ -226,7 +226,7 @@ and a large num_layers (including a bridge between Encoder and Decoder Blocks).
 base_filters   = 16
 base_kernels   = (9,9)
 num_layers     = 8
-num_classes    = 4
+num_classes    = 7
 dilation       = (1,1)
 </pre>
 
@@ -392,7 +392,7 @@ python ../../../src/TensorFlowFlexUNetInferencer.py ./train_eval_infer_aug.confi
 
 <table>
 <tr>
-<th>Image</th>b
+<th>Image</th>
 <th>Mask (ground_truth)</th>
 <th>Inferred-mask</th>
 </tr>
